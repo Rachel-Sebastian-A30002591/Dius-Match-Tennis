@@ -1,0 +1,24 @@
+{
+  "name": "dius-tennis-game",
+  "version": "1.0.0",
+  "description": "Tennis Game",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json -w",
+    "test": "mocha --require ts-node/register ts,tsx tests/**/*.test.ts",
+    "test:watch": "mocha --require ts-node/register --watch-extensions ts,tsx  tests/**/*.test.ts",
+    "clean": "rm -rf build"
+  },
+  "dependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/node": "^7.0.27",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.0.1",
+    "mocha": "^3.4.2",
+    "ts-node": "^3.0.4",
+    "tslib": "^1.7.1",
+    "typescript": "^2.3.4"
+  }
+}
